@@ -49,4 +49,21 @@ public class StudentTest {
         stu.setFirst("tom");
         assertEquals("tom", stu.getFirst());
     }
+    
+    @Test
+    public void testLastName() {
+        stu.setLast("smith");
+        assertEquals("smith", stu.getLast());
+    }
+    
+    @Test
+    public void testFirstName1() {
+        stu.setFirst("tommmy");
+        assertEquals("tom", stu.getFirst());
+    }
+    @Test
+    public void testLastName1() {
+        stu.setLast("jones");
+        assertEquals("jones", stu.getLast());
+    }
 }
