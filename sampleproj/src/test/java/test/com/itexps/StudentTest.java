@@ -13,6 +13,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import org.jenkinsci.testinprogress.runner.ProgressSuite;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
 /**
  *
  * @author 16309
@@ -45,25 +49,29 @@ public class StudentTest {
     // The methods must be annotated with annotation @Test. For example:
     //
     @Test
-    public void testFirstName() {
+    public void testFirstName() throws InterruptedException {
         stu.setFirst("tom");
         assertEquals("tom", stu.getFirst());
+        Thread.sleep(45000);
     }
     
     @Test
-    public void testLastName() {
+    public void testLastName() throws InterruptedException {
         stu.setLast("smith");
         assertEquals("smith", stu.getLast());
+        Thread.sleep(45000);
     }
     
     @Test
-    public void testFirstName1() {
+    public void testFirstName1() throws InterruptedException {
         stu.setFirst("tommy");
         assertEquals("tommy", stu.getFirst());
+        Thread.sleep(45000);
     }
     @Test
-    public void testLastName1() {
+    public void testLastName1() throws InterruptedException {
         stu.setLast("jones");
         assertEquals("jones", stu.getLast());
+        Thread.sleep(45000);
     }
 }
