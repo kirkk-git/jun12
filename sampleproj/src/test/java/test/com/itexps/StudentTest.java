@@ -59,7 +59,7 @@ public class StudentTest {
     @Test
     public void testFirstName1() {
         stu.setFirst("tommmy");
-        assertEquals("tom", stu.getFirst());
+        assertEquals("tommy", stu.getFirst());
     }
     @Test
     public void testLastName1() {
