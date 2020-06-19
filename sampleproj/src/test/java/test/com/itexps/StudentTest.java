@@ -49,26 +49,26 @@ public class StudentTest {
     public void testFirstName() throws InterruptedException {
         stu.setFirst("tom");
         assertEquals("tom", stu.getFirst());
-        Thread.sleep(20000);
+        //Thread.sleep(20000);
     }
     
     @Test
     public void testLastName() throws InterruptedException {
         stu.setLast("smith");
         assertEquals("smith", stu.getLast());
-        Thread.sleep(20000);
+        //Thread.sleep(20000);
     }
     
     @Test
     public void testFirstName1() throws InterruptedException {
         stu.setFirst("tommy");
         assertEquals("tommy", stu.getFirst());
-        Thread.sleep(20000);
+        //Thread.sleep(20000);
     }
     @Test
     public void testLastName1() throws InterruptedException {
         stu.setLast("jones");
         assertEquals("jones", stu.getLast());
-        Thread.sleep(20000);
+        //Thread.sleep(20000);
     }
 }
